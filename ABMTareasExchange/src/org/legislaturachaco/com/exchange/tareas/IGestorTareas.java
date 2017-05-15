@@ -1,4 +1,4 @@
-package org.legislaturachaco.comunicaciones;
+package org.legislaturachaco.com.exchange.tareas;
 
 import com.sun.jna.Library;
 
@@ -11,6 +11,8 @@ public interface IGestorTareas extends Library{
 	public boolean getSetUsuario(String usuario, String contrasena);
 	
 	public String getNombreUsuario();
+	
+	public String getCategoriasTarea();
 	
 	public int getTotalTareas();
 	
@@ -53,6 +55,8 @@ public interface IGestorTareas extends Library{
     public String getIdTarea(int idx);
 
     public String getCategoriaTarea(int idx);
+    
+    public Boolean setCategoriaTarea(int idx, String nombre);
     
     public Boolean marcarTareaCompletada(int idx);
 }
