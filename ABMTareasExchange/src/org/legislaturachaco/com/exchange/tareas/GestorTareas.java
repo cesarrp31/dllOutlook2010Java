@@ -4,7 +4,7 @@ import java.io.File;
 
 import com.sun.jna.Native;
 
-public class GestorTareas {
+class GestorTareas {
 	private static String nombreDll;
 	private static String pathCompleto;
 	private static String separador = File.separator;
@@ -75,14 +75,11 @@ public class GestorTareas {
 				System.out.println("Nombre del sw utilizado: " + getInstanciaGE().getNombreGestor());
 				System.out.println("Versión del sw utilizado: " + getInstanciaGE().getVersionGestor());
 				
-				System.out.println("Lista categorias: " + getInstanciaGE().getCategoriasTarea());
-			
+				System.out.println("Lista categorias: " + getInstanciaGE().getCategoriasTarea());		
 				
 				tareasUsuario("coperaltsa");
-				tareasUsuario("coperalta");
-				
-				tareasUsuario("cesar.op85");
-				
+				tareasUsuario("coperalta");				
+				tareasUsuario("cesar.op85");				
 			} else {
 				System.out.println("SO: "+os+", no se puede continuar.");
 			}
@@ -103,6 +100,8 @@ public class GestorTareas {
 			if(getInstanciaGE().existeError()) throw new RuntimeException("Error en dll");
 			
 			getInstanciaGE().actualizarListaTareas();
+			
+			if(getInstanciaGE().existeError()) throw new RuntimeException("Error en dll");
 			
 			System.out.print("\nUsuario utilizado: " + getInstanciaGE().getNombreUsuario());
 			System.out.println(". Total de Tareas en Outlook: " + getInstanciaGT().getTotalTareas());
@@ -152,6 +151,5 @@ public class GestorTareas {
 			
 			e.printStackTrace();
 		}
-	}
-	
+	}	
 }

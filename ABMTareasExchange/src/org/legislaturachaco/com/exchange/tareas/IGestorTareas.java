@@ -3,22 +3,6 @@ package org.legislaturachaco.com.exchange.tareas;
 import com.sun.jna.Library;
 
 public interface IGestorTareas extends Library{
-	/*
-	public static final int NO_EXISTE_ERROR = 0;
-	public static final int USUARIO_NO_ENCONTRADO = 1;
-	public static final int OTRO_ERROR = 10;*/
-	
-	/*public String getVersionDLL();
-	
-	/*public void setCredencialesUsuario(String usuario, String contrasena);
-	
-	public String getNombreSWFuente();
-		
-	public String getVersionSWFuente();
-	
-	public boolean getSetUsuario(String usuario, String contrasena);
-	
-	public String getNombreUsuario();*/
 	
 	public String getCategoriasTarea();
 	
@@ -68,11 +52,4 @@ public interface IGestorTareas extends Library{
     
     public Boolean marcarTareaCompletada(int idx);
     
-    /*public Boolean existeError();
-    
-    public String msgError();
-    
-    public String claseError();
-    
-    public int codigoError();*/
 }
