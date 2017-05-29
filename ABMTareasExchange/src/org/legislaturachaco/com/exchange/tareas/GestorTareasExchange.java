@@ -77,7 +77,8 @@ public class GestorTareasExchange {
 	
 	public static void main(String[] args) {
 		try{
-			GestorTareasExchange gte= new GestorTareasExchange("cfoperalta", "");
+			GestorTareasExchange gte= new GestorTareasExchange("coperalta", "");			
+			gte.ge.actualizarListaTareas();
 			
 			System.out.println(gte.getGestorExchange().getNombreGestor());
 			System.out.println(gte.getGestorTareas().toString());

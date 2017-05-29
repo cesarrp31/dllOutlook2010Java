@@ -2,10 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/Administrador.000/Documents/Librerias Java/JNA/jna-4.4.0.jar" sourcepath="C:/Users/Administrador.000/Documents/Librerias Java/JNA/src.zip">
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrador.000/Documents/Librerias Java/JNA/jna-4.4.0.jar" sourcepath="C:/Users/Administrador.000/Documents/Librerias Java/JNA/src.zip">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/Administrador.000/Documents/Librerias%20Java/JNA/jna-javadoc.zip!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
