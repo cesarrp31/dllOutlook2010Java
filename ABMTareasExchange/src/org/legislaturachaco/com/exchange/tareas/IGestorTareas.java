@@ -26,21 +26,21 @@ public interface IGestorTareas extends Library{
 
     public String getDelegadorTarea(int idx);
 
-    public Boolean isTareaLeida(int idx);
+    public boolean isTareaLeida(int idx);
 
-    public Boolean isTareaModificada(int idx);
+    public boolean isTareaModificada(int idx);
 
     public String getEstadoTarea(int idx);
 
-    public Boolean guardarModificacionesTarea(int idx);
+    public boolean guardarModificacionesTarea(int idx);
     
-    public Boolean borrarTarea(int idx);
+    public boolean borrarTarea(int idx);
 
     public int getPorcentajeTareaCompletada(int idx);
 
-    public Boolean isTareaConflicto(int idx);
+    public boolean isTareaConflicto(int idx);
 
-    public Boolean isTareaRecurrente(int idx);
+    public boolean isTareaRecurrente(int idx);
 
     public String getImportanciaTarea(int idx);
 
@@ -48,8 +48,8 @@ public interface IGestorTareas extends Library{
 
     public String getCategoriaTarea(int idx);
     
-    public Boolean setCategoriaTarea(int idx, String nombre);
+    public boolean setCategoriaTarea(int idx, String nombre);
     
-    public Boolean marcarTareaCompletada(int idx);
+    public boolean marcarTareaCompletada(int idx);
     
 }

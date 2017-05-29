@@ -79,7 +79,7 @@ class GestorTareas {
 				
 				tareasUsuario("coperaltsa");
 				tareasUsuario("coperalta");				
-				tareasUsuario("cesar.op85");				
+				tareasUsuario("cesar.op85");
 			} else {
 				System.out.println("SO: "+os+", no se puede continuar.");
 			}

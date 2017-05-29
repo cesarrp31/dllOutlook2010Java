@@ -8,7 +8,7 @@ public interface IGestorExchange extends Library{
 	public static final int USUARIO_NO_ENCONTRADO = 1;
 	public static final int OTRO_ERROR = 10;
 	
-	public Boolean existeError();
+	public boolean existeError();
     
     public String msgError();
     
