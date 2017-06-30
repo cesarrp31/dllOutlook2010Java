@@ -4,7 +4,7 @@ import java.io.File;
 
 import com.sun.jna.Native;
 
-class GestorTareas {
+class TestGestorTareas {
 	private static String nombreDll;
 	private static String pathCompleto;
 	private static String separador = File.separator;
@@ -12,14 +12,14 @@ class GestorTareas {
 	private static IGestorExchange ge;
 	private static IGestorTareas gt;
 
-	private GestorTareas() {}
+	private TestGestorTareas() {}
 
 	public static String getNombreDll() {
 		return nombreDll;
 	}
 
 	public static void setNombreDll(String nombreDll) {
-		GestorTareas.nombreDll = nombreDll;
+		TestGestorTareas.nombreDll = nombreDll;
 	}
 
 	public static String getPathCompleto() {
@@ -27,7 +27,7 @@ class GestorTareas {
 	}
 
 	public static void setPathCompleto(String pathCompleto) {
-		GestorTareas.pathCompleto = pathCompleto;
+		TestGestorTareas.pathCompleto = pathCompleto;
 	}
 
 	public static IGestorTareas getInstanciaGT() {
@@ -68,8 +68,8 @@ class GestorTareas {
 			System.out.println("user.dir " + osd);
 
 			if (os.startsWith("Win")) {
-				GestorTareas.setNombreDll(projecto);
-				GestorTareas.setPathCompleto(pathCompleto);
+				TestGestorTareas.setNombreDll(projecto);
+				TestGestorTareas.setPathCompleto(pathCompleto);
 				
 				System.out.println("Versión dll utilizado: " + getInstanciaGE().getVersionDLL());
 				System.out.println("Nombre del sw utilizado: " + getInstanciaGE().getNombreGestor());

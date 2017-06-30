@@ -7,6 +7,5 @@
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/Administrador.000/Documents/Librerias%20Java/JNA/jna-javadoc.zip!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

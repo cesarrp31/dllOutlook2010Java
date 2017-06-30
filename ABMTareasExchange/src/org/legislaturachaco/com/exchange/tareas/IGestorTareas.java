@@ -2,9 +2,9 @@ package org.legislaturachaco.com.exchange.tareas;
 
 import com.sun.jna.Library;
 
-public interface IGestorTareas extends Library{
+interface IGestorTareas extends Library{
 	
-	public String getCategoriasTarea();
+	//public String getCategoriasTarea();
 	
 	public int getTotalTareas();
 	
@@ -51,5 +51,5 @@ public interface IGestorTareas extends Library{
     public boolean setCategoriaTarea(int idx, String nombre);
     
     public boolean marcarTareaCompletada(int idx);
-    
+       
 }

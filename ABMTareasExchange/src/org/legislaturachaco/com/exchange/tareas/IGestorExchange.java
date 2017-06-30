@@ -39,6 +39,5 @@ public interface IGestorExchange extends Library{
 		
 	public String getVersionGestor();
 	
-	public String getCategoriasTarea();
-	
+	public String getCategoriasTarea();	
 }
