@@ -6,6 +6,12 @@ import java.util.List;
 
 import com.sun.jna.Native;
 
+/**
+ * 
+ * @author A.U.S. Peralta, Cesar Omar
+ *
+ */
+
 public class GestorTareasExchange {
 	private IGestorExchange ge;
 	private IGestorTareas gt;
